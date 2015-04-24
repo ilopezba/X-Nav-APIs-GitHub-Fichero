@@ -47,7 +47,7 @@ function showRepo(error, repo) {
 };
 
 function subirFichero() {
-	myrepo.write('master', $("#fichero").val(), $("#contenido").val(), 'update', function(err) {});
+	repo.write('master', $("#fichero").val(), $("#contenido").val(), 'commit', function(err) {});
 	$("#fich").val("");
 	$("#conte").val("");
 };
